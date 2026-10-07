@@ -1,0 +1,12 @@
+{
+  "name": "climate-taxonomy-explorer",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Placeholder build for the Climate Taxonomy v5 Explorer (replaced by the app).",
+  "scripts": {
+    "build": "node scripts/build-placeholder.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
