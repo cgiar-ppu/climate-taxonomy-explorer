@@ -1,5 +1,5 @@
 name: Deploy to GitHub Pages
-# Every push to main builds the site (npm ci && npm run build, Node 20) and publishes dist/ to
+# Every push to main builds the site (npm ci && npm run build, Node 22; Vite 8 needs >= 20.19) and publishes dist/ to
 # https://cgiar-ppu.github.io/climate-taxonomy-explorer/ . GitHub-hosted runners only.
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: npm
       - name: Build
         run: npm ci && npm run build

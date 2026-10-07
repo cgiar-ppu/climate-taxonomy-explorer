@@ -1,4 +1,10 @@
 node_modules/
 dist/
-.DS_Store
+dist-single/
+screenshots/
+.playwright/
+ms-playwright/
 *.log
+.DS_Store
+.vite/
+.serve-*
